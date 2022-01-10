@@ -47,6 +47,16 @@ body {
   stroke: #FFF;
 }
 
+.text {
+  font-size: 30px;
+  fill: #FFBD35;
+  font-family: "Arial", sans-serif;
+  text-anchor: middle;
+  cursor: pointer;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
 @media (max-width: 600px) {
   svg {
     width: 300px;
