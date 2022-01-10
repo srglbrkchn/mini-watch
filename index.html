@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mini Watch ⌛️</title>
+</head>
+
+<body>
+  <div class="watch">
+    <svg class="minutes" width="700" height="700" viewbox="-350 -350 700 700">
+      <circle cx="0" cy="0" r="190" pathLength="60" />
+      <circle class="hours" cx="0" cy="0" r="190" pathLength="60" />
+
+      <!-- Hour hand -->
+      <g id="hour_hand">
+        <line class="hand" x1="0" y1="0" x2="0" y2="-100" />
+        <line class="hand hand--thick" x1="0" y1="-24" x2="0" y2="-100" />
+      </g>
+
+      <!-- Minutes Hand -->
+      <g id="minute_hand">
+        <line class="hand" x1="0" y1="0" x2="0" y2="-160" />
+        <line class="hand hand--thick" x1="0" y1="-24" x2="0" y2="-160" />
+      </g>
+
+      <g id="second_hand">
+        <line class="hand hand--second" x1="0" y1="24" x2="0" y2="-160" />
+      </g>
+    </svg>
+  </div>
+
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
