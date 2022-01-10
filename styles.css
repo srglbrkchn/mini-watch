@@ -37,6 +37,12 @@ body {
   stroke-linecap: round;
 }
 
+.middle-circle {
+  stroke: #FFBD35;
+  stroke-width: 5;
+  fill: #35589A;
+}
+
 .hand--second {
   stroke: #FFF;
 }

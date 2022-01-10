@@ -11,9 +11,9 @@ function animate() {
   const date = new Date();
 
   // Get current hours minutes and seconds
-  const hour = date.getHours();
-  const minute = date.getMinutes();
-  const second = date.getSeconds();
+  const hour = date.getHours() + date.getMinutes()/60;
+  const minute = date.getMinutes() + date.getSeconds()/60;
+  const second = date.getSeconds() + date.getMilliseconds()/1000;
 
   // Rotate watch hands based on current time
   hourHand.setAttribute("transform", `rotate(${(360/12) * hour})`);
